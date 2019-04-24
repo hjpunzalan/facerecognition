@@ -70,7 +70,7 @@ class App extends Component {
 
     onPictureSubmit = () => {
       this.setState({imageUrl: this.state.input});
-      fetch('https://quiet-atoll-12771.herokuapp.com/imageurl', {
+      fetch('https://facerecognitionhjpunzalan.herokuapp.com/imageurl', {
               method: 'post',
               headers: {'Content-Type':'application/json'},
               body: JSON.stringify({
@@ -80,7 +80,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-      fetch('https://quiet-atoll-12771.herokuapp.com/image', {
+          fetch('https://facerecognitionhjpunzalan.herokuapp.com/image', {
             method: 'put',
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify({
@@ -110,7 +110,7 @@ class App extends Component {
         
     }
       componentDidMount() {
-    fetch('https://quiet-atoll-12771.herokuapp.com/')
+        fetch('https://facerecognitionhjpunzalan.herokuapp.com/')
     .then(response => response.json())
     .then(console.log) // dont need a parameter as it will console log all data like this
   }
