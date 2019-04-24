@@ -20,7 +20,7 @@ class Signin extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('https://quiet-atoll-12771.herokuapp.com/signin', {
+    fetch('https://facerecognitionhjpunzalan.herokuapp.com/signin', {
       method: 'post',
       headers: {'Content-Type':'application/json'}, // has the dash so it has to be in quotes
       body:JSON.stringify ({ //sending to server has to be in JSON and not javascript object
