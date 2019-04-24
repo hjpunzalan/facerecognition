@@ -132,7 +132,7 @@ class App extends Component {
                onPictureSubmit={this.onPictureSubmit}/>
                <FaceRecognition box={box} imageUrl={imageUrl} />
                </div>
-          ://Signin + Register
+          ://Signin + Register 
          (
             route === 'signin'
             ? //Signin
